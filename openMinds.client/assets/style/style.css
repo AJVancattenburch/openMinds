@@ -1,1 +1,86 @@
 /* BASIC STYLES HERE */
+/* :root {
+  --bg-pink: #EAA9EB;
+  --bg-light-blue: #76F1DE;
+  --bg-light-green: #EAF69A;
+  --bg-light-orange: #FDC673;
+} */
+
+main {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#comments{
+  max-height: 300px;
+}
+
+/* FONTS */
+.font-flow {
+  font-family: 'Flow Circular', cursive;
+  text-shadow: 1px 1px 3px black;
+}
+
+.font-merri {
+  font-family: 'Merriweather', serif;
+  text-shadow: 1px 1px 3px black;
+}
+
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 1px 1px 3px black;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px black;
+}
+
+/* BACKGROUNDS */
+.bg-pink {
+  background-color: #EAA9EB;
+}
+
+.bg-light-blue {
+  background-color: #76F1DE;
+  transition: .5s;
+}
+
+.bg-light-green {
+  background-color: #EAF69A;
+  transition: .5s;
+}
+
+.bg-light-orange {
+  background-color: #FDC673;
+  transition: .5s;
+}
+
+.bg-dark-blue {
+  background-color: #2B364F;
+  transition: .5s;
+}
+
+.bg-godzilla {
+  background-image: url('../img/godzilla.png');
+  height: 45vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+  transition: 1s;
+}
+
+.bg-godzilla:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* HOVER EFFECTS */
+a:hover {
+  filter: brightness(75%);
+  transition: .5s;
+}
+
