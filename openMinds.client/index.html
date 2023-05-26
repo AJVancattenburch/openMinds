@@ -10,59 +10,113 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
     integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Merriweather:wght@300&family=Nunito+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>openMinds.client</title>
+  <style>
+    /* * {
+      border: 1px solid teal;
+    } */
+  </style>
 </head>
 
 <body>
   <!-- SECTION -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
-      <a class="navbar-brand" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ml-2">openMinds.client</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <!-- NAVLINKS -->
-          <a href="#/about" class="nav-link">About</a>
-        </div>
+    <nav class="row navbar navbar-dark navbar-sticky navbar-expand bg-dark-blue text-light px-2">
+      <div class="col-4 fs-3" width="50px">
+        <img class="img-fluid" width="75px" src="./assets/img/openMindsLogo.png" alt="logo">
+        OPEN_MINDS
       </div>
-      <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
+      <ul class="col-7 nav justify-content-end align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-light rounded-3 h-50 m-3 bg-pink" href="#"><i class="mdi mdi-airballoon mx-4 fs-4"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light rounded-3 h-50 m-3 bg-light-blue" href="#"><i class="mdi mdi-airballoon mx-4 fs-4"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light rounded-3 h-50 m-3 bg-light-green" href="#"><i class="mdi mdi-airballoon mx-4 fs-4"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light rounded-3 h-50 m-3 bg-light-orange" href="#"><i class="mdi mdi-airballoon mx-4 fs-4"></i></a>
+        </li>
+      </ul>
+      <div class="col-1" id="authstate">
+
+      </div>
     </nav>
   </header>
 
   <!-- SECTION -->
   <main>
 
-    <section id="auth-template">
-      <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
-      <div class="container-fluid">
-        <div class="row my-3">
-          <div class="col-lg-5" id="auth-settings">
-            <div class="card p-2 skeleton-loader">
-              <div class="card-title p-2">
-                <div class="d-flex align-items-center">
-                  <div class="skeleton-loader avatar"></div>
-                  <div class="skeleton-loader text mx-2"></div>
-                </div>
+    <div class="container-fluid mt-4">
+      <section class="row font-roboto justify-content-between">
+        <div class="col-7 bg-godzilla">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <div class="text-start mt-5">
+                <img class="img-fluid rounded-circle bg-pink" width="75px" src="./assets/img/openMindsLogo.png" alt="logo">
               </div>
-              <div class="card-body border-top">
-                <div class="skeleton-loader text block"></div>
-                <div class="skeleton-loader text block"></div>
-                <div class="skeleton-loader text block"></div>
-              </div>
+              <p class="fs-2 text-light mt-2" id="opUsername">
+                Username
+              </p>
+              <p class="fs-3 text-light mt-2" id="postDescription">
+                Godzilla destroyed the city!
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="col-4 mt-4 bg-light-purple pt-2" id="sidebar-user">
+          <div class="row m-2">
+            <img class="col-2 bg-dark rounded-circle p-2" src="./assets/img/openMindsLogo.png" alt="">
+            <h1 class="col-8 text-white">Username</h1>
+          </div>
+          <h1 class="col-12 mt-3 text-center text-white">Welcome to Gaming</h1>
+        </div>
+      </section>
+      <section class="row justify-content-between" id="comments">
+        <div class="col-7 bg-light-purple pt-3 top-shadow overflow-auto">
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+        </div>
+        <div class="col-4 bg-light-purple align-content-center px-0" id="top-3">
+          <div class="bg-dark-blue text-light mt-4 mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="bg-dark-blue text-light mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="bg-dark-blue text-light mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="bg-dark-blue text-light mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+        </div>
+      </section>
+  
+    </div>
 
     <section id="router-view">
       <!-- primary viewport -->
