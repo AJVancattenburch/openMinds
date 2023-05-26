@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="assets/style/style.css">
   <title>openMinds.client</title>
   <style>
-    * {
+    /* * {
       border: 1px solid teal;
-    }
+    } */
   </style>
 </head>
 
@@ -31,7 +31,7 @@
         <img class="img-fluid" width="75px" src="./assets/img/openMindsLogo.png" alt="logo">
         OPEN_MINDS
       </div>
-      <ul class="col-8 nav justify-content-end align-items-center">
+      <ul class="col-7 nav justify-content-end align-items-center">
         <li class="nav-item">
           <a class="nav-link text-light rounded-3 h-50 m-3 bg-pink" href="#"><i class="mdi mdi-airballoon mx-4 fs-4"></i></a>
         </li>
@@ -45,32 +45,42 @@
           <a class="nav-link text-light rounded-3 h-50 m-3 bg-light-orange" href="#"><i class="mdi mdi-airballoon mx-4 fs-4"></i></a>
         </li>
       </ul>
+      <div class="col-1" id="authstate">
+
+      </div>
     </nav>
   </header>
 
   <!-- SECTION -->
   <main>
 
-    <div class="container-fluid">
-      <section class="row font-roboto">
+    <div class="container-fluid mt-4">
+      <section class="row font-roboto justify-content-between">
         <div class="col-7 bg-godzilla">
           <div class="row">
             <div class="col-12 mt-5">
               <div class="text-start mt-5">
                 <img class="img-fluid rounded-circle bg-pink" width="75px" src="./assets/img/openMindsLogo.png" alt="logo">
               </div>
-              <p class="fs-2 text-light mt-2">
+              <p class="fs-2 text-light mt-2" id="opUsername">
                 Username
               </p>
-              <p class="fs-3 text-light mt-2">
+              <p class="fs-3 text-light mt-2" id="postDescription">
                 Godzilla destroyed the city!
               </p>
             </div>
           </div>
         </div>
+        <div class="col-4 mt-4 bg-light-purple pt-2" id="sidebar-user">
+          <div class="row m-2">
+            <img class="col-2 bg-dark rounded-circle p-2" src="./assets/img/openMindsLogo.png" alt="">
+            <h1 class="col-8 text-white">Username</h1>
+          </div>
+          <h1 class="col-12 mt-3 text-center text-white">Welcome to Gaming</h1>
+        </div>
       </section>
-      <section class="row" id="comments">
-        <div class="col-7 bg-light-orange pt-3 top-shadow overflow-auto">
+      <section class="row justify-content-between" id="comments">
+        <div class="col-7 bg-light-purple pt-3 top-shadow overflow-auto">
           <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
           </div>
@@ -82,6 +92,26 @@
           </div>
           <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+          <div class="bg-dark-blue text-light my-2 rounded-4 p-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis vero, omnis laudantium autem aperiam nobis, quaerat neque repellat magnam impedit rem repudiandae libero maxime odio at quia perspiciatis nisi.</p>
+          </div>
+        </div>
+        <div class="col-4 bg-light-purple align-content-center px-0" id="top-3">
+          <div class="bg-dark-blue text-light mt-4 mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="bg-dark-blue text-light mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="bg-dark-blue text-light mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="bg-dark-blue text-light mb-1 p-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
           </div>
         </div>
       </section>

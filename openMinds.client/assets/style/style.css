@@ -10,10 +10,20 @@ main {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  background-color:#172032
+}
+
+#sidebar-user{
+  border-radius: 14px 0px 0px 14px;
+  height: 250px;
+}
+
+#top-3{
+  border-radius: 14px 0px 0px 0px;
 }
 
 #comments{
-  max-height: 300px;
+  max-height: 250;
 }
 
 /* FONTS */
@@ -43,6 +53,10 @@ main {
   background-color: #EAA9EB;
 }
 
+.bg-light-purple {
+  background-color: #7E90B8;
+}
+
 .bg-light-blue {
   background-color: #76F1DE;
   transition: .5s;
@@ -69,7 +83,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: .9;
+  opacity: .6;
   transition: 1s;
 }
 
