@@ -1,0 +1,13 @@
+
+  {
+    "name": "openminds",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:server",
+      "setup:app": "npm run setup:server && npm run setup:client",
+      "setup:client": "cd openMinds.client && npm i",
+      "setup:server": "cd openMinds && npm i",
+      "start": "node openMinds/index.js"
+    }
+  }
+  
